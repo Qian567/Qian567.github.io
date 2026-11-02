@@ -36,3 +36,18 @@
     "layout/archive",
     "layout/sidebar"
 ;
+/* Personal photography background */
+
+body {
+  background-image:
+    linear-gradient(
+      rgba(245, 245, 245, 0.85),
+      rgba(245, 245, 245, 0.85)
+    ),
+    url("/images/photo1.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
