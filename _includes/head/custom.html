@@ -24,42 +24,40 @@
 
 
 
+
 <!-- Home page design -->
 {% if page.url == "/" %}
 <style>
 
-/* Home background photo */
+/* Full-page photography background */
 body {
   background-image:
     linear-gradient(
-      rgba(245, 245, 245, 0.20),
-      rgba(245, 245, 245, 0.20)
+      90deg,
+      rgba(249, 248, 246, 0.82) 0%,
+      rgba(249, 248, 246, 0.76) 65%,
+      rgba(249, 248, 246, 0.40) 100%
     ),
     url("/images/photo1.png") !important;
 
   background-size: cover;
-  background-position: center 45%;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
-/* Main content: translucent white panel */
-.page__inner-wrap {
-  background: rgba(255, 255, 255, 0.88);
-  padding: 24px 28px;
-  border-radius: 8px;
-  box-sizing: border-box;
-}
-
-/* Sidebar: translucent white panel */
+/* Remove white content boxes */
+.page__inner-wrap,
 .sidebar {
-  background: rgba(255, 255, 255, 0.85);
-  padding: 18px;
-  border-radius: 8px;
-  box-sizing: border-box;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
-/* Dark text */
+/* Dark readable text */
 .page__title,
 .page__content,
 .page__content p,
@@ -67,11 +65,18 @@ body {
 .author__name,
 .author__bio,
 .author__urls a {
-  color: #252525 !important;
+  color: #242424 !important;
+}
+
+/* Headings */
+.page__content h2,
+.page__content h3 {
+  color: #222222 !important;
 }
 
 </style>
 {% endif %}
+
 
 
 
