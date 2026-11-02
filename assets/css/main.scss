@@ -38,11 +38,12 @@
 ;
 /* Personal photography background */
 
+
 body {
   background-image:
     linear-gradient(
-      rgba(245, 245, 245, 0.85),
-      rgba(245, 245, 245, 0.85)
+      rgba(245, 245, 245, 0.55),
+      rgba(245, 245, 245, 0.55)
     ),
     url("/images/photo1.png");
 
@@ -51,3 +52,4 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
