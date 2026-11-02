@@ -22,4 +22,25 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
+
+<!-- Research page background -->
+{% if page.url == "/research/" %}
+<style>
+body {
+  background-image:
+    linear-gradient(
+      rgba(245, 245, 245, 0.55),
+      rgba(245, 245, 245, 0.55)
+    ),
+    url("/images/photo2.png");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+</style>
+{% endif %}
+
 <!-- end custom head snippets -->
+
