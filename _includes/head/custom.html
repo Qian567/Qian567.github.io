@@ -23,6 +23,58 @@
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
 
+
+<!-- Home page design -->
+{% if page.url == "/" %}
+<style>
+
+/* Home background photo */
+body {
+  background-image:
+    linear-gradient(
+      rgba(245, 245, 245, 0.20),
+      rgba(245, 245, 245, 0.20)
+    ),
+    url("/images/photo1.png") !important;
+
+  background-size: cover;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Main content: translucent white panel */
+.page__inner-wrap {
+  background: rgba(255, 255, 255, 0.88);
+  padding: 24px 28px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Sidebar: translucent white panel */
+.sidebar {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 18px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Dark text */
+.page__title,
+.page__content,
+.page__content p,
+.page__content li,
+.author__name,
+.author__bio,
+.author__urls a {
+  color: #252525 !important;
+}
+
+</style>
+{% endif %}
+
+
+
 <!-- Research page background -->
 {% if page.url == "/research/" %}
 <style>
